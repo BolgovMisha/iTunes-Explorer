@@ -1,0 +1,98 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash_screen</item>
+    </style>
+
+    <style name="ListItem">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ListItem.Title">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+        <item name="android:textColor">@color/colorDarkTextPrimary</item>
+    </style>
+
+    <style name="ListItem.Title.Track">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+        <item name="android:textColor">@color/colorDarkTextPrimary</item>
+    </style>
+
+    <style name="ListItem.TrackDuration">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+        <item name="android:textColor">@color/colorDarkTextSecondary</item>
+    </style>
+
+    <style name="ListItem.TrackNumber">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+        <item name="android:textColor">@color/colorDarkTextSecondary</item>
+    </style>
+
+    <style name="ListItem.Title.Album">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing"  tools:targetApi="lollipop">0</item>
+        <item name="android:textColor">@color/colorDarkTextPrimary</item>
+    </style>
+
+    <style name="ListItem.Artist">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0.1</item>
+        <item name="android:textColor">@color/colorDarkTextSecondary</item>
+    </style>
+
+    <style name="SearchView">
+        <item name="android:layout_height">56dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:letterSpacing" tools:targetApi="lollipop">0</item>
+        <item name="android:textColor">@color/colorDarkTextPrimary</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingRight">@dimen/dp16</item>
+        <item name="android:paddingLeft">@dimen/dp16</item>
+    </style>
+
+    <style name="AlbumName">
+        <item name="android:textColor">@color/colorLightTextPrimary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AlbumName.Expanded">
+        <item name="android:textSize">28sp</item>
+    </style>
+
+    <style name="AlbumName.Collapsed"/>
+
+    <style name="NoSearchHistory">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/colorStubText</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="CommonRecyclerView">
+        <item name="android:overScrollMode">never</item>
+    </style>
+    <style name="AlbumInfo">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">#DEFFFFFF</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

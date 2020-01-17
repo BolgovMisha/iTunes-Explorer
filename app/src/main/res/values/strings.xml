@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">iTunes Explorer</string>
+    <string name="album_info">&#127908; %1$s • &#127925; %2$d %3$s</string>
+    <string name="track_duration">%1$d:%2$d</string>
+    <string name="search">Search</string>
+    <string name="no_search_history">You have no search history :|</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="itunes_api_url">https://itunes.apple.com/</string>
+
+    <plurals name="song_plurals">
+        <item quantity="zero">songs</item>
+        <item quantity="one">song</item>
+        <item quantity="two">songs</item>
+        <item quantity="few">songs</item>
+        <item quantity="many">songs</item>
+        <item quantity="other">songs</item>
+    </plurals>
+</resources>

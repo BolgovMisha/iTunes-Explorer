@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".ui.search.SearchFragment">
+
+    <View
+        android:id="@+id/viewFocusStub"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <apps.mishka.testapp.ui.search.SearchEditText
+        android:id="@+id/editTextSearch"
+        style="@style/SearchView"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/dp16"
+        android:background="@drawable/background_capsule"
+        android:elevation="@dimen/searchViewElevation"
+        android:hint="@string/search"
+        android:drawableRight="@drawable/icon_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        style="@style/CommonRecyclerView"
+        android:background="@android:color/white"
+        android:elevation="@dimen/searchViewElevation"
+        android:paddingTop="@dimen/dp16"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:targetApi="lollipop"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchHistory"
+        android:layout_width="match_parent"
+        style="@style/CommonRecyclerView"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editTextSearch"/>
+
+    <TextView
+        android:id="@+id/textViewNoHistoryStub"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:layout_margin="32dp"
+        style="@style/NoSearchHistory"
+        android:gravity="center"
+        android:text="@string/no_search_history"
+        app:layout_constraintEnd_toEndOf="@id/recyclerViewSearchHistory"
+        app:layout_constraintStart_toStartOf="@id/recyclerViewSearchHistory"
+        app:layout_constraintTop_toTopOf="@id/recyclerViewSearchHistory"/>
+
+    <View
+        android:id="@+id/viewShadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:background="#4D000000"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/loadingView"
+        android:visibility="gone"
+        android:alpha="0"
+        android:clickable="true"
+        android:elevation="@dimen/loadingViewElevation"
+        android:background="@color/colorShadowLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:indeterminate="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DE000000</color>
+    <color name="colorSecondary">#99000000</color>
+
+    <color name="colorDarkTextPrimary">#DE000000</color>
+    <color name="colorDarkTextSecondary">#99000000</color>
+
+    <color name="colorLightTextPrimary">#DEFFFFFF</color>
+    <color name="colorLightTextSecondary">#99FFFFFF</color>
+
+    <color name="colorShadowDark">#66000000</color>
+    <color name="colorShadowLight">#99FFFFFF</color>
+
+    <color name="colorSearchViewOutline">#1A000000</color>
+
+    <color name="colorStubText">#66000000</color>
+
+</resources>

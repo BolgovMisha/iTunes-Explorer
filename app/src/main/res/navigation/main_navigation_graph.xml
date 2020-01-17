@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="apps.mishka.testapp.ui.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_fromSearch_toDetails"
+            app:destination="@+id/albumDetailsFragment"
+            app:exitAnim="@animator/fragment_exit"
+            app:enterAnim="@animator/fragment_enter"
+            app:popEnterAnim="@animator/fragment_pop_enter"
+            app:popExitAnim="@animator/fragment_pop_exit"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/albumDetailsFragment"
+        android:name="apps.mishka.testapp.ui.details.AlbumDetailsFragment"
+        android:label="fragment_album_details"
+        tools:layout="@layout/fragment_album_details" />
+</navigation>
